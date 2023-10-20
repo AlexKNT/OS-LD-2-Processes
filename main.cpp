@@ -158,7 +158,7 @@ BOOL CALLBACK MainWndProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
             char szCommandLine[MAX_PATH];
             GetDlgItemTextA(hWnd, IDC_COMMANDLINE, szCommandLine, MAX_PATH);
 
-            STARTUPINFOA si; // Use STARTUPINFOA instead of STARTUPINFO
+            STARTUPINFOA si; 
             PROCESS_INFORMATION pi;
             ZeroMemory(&si, sizeof(si));
             si.cb = sizeof(si);
@@ -211,3 +211,4 @@ BOOL CALLBACK MainWndProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
 
     return FALSE;
 }
+// lalala
